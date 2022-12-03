@@ -15,9 +15,14 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
-	@GetMapping
-	List<String> bismillah(){
+	@GetMapping("/")
+	public List<String> bismillah(){
 		return List.of("Bismillah","Allahu");
+	}
+
+	@GetMapping("/thanks")
+	public List<String> thanksShimulBhai(){
+		return List.of("Jajak Allah","Shimul Bhai");
 	}
 
 }
